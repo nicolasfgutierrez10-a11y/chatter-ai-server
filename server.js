@@ -164,6 +164,10 @@ REGLAS:
   }
 
 });
+app.get("/", (req, res) => {
+  res.send("Servidor funcionando 🚀");
+});
+
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
